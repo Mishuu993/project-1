@@ -1,0 +1,462 @@
+/*  Hero Section */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 50, 100, 0.4); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/*  Highlight Word */
+.highlight {
+  color: #ffcc00;
+  font-style: italic;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*  Animation Effects */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  Heading */
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+/*  Paragraph */
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #f1f1f1;
+  font-weight: 400;
+}
+
+/*  Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #0288d1;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.btn-primary:hover {
+  background: #026aa7;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: white;
+  color: #0288d1;
+  transform: translateY(-3px);
+}
+
+
+/* Horizontal Scroll Container */
+.services-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.services-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+.services-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Service Card */
+.service-card {
+  min-width: 250px;
+  background: #73c3cd;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+    overflow-x: hidden;  
+
+}
+.service-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: (90deg, #f3f9ff, #d9e8ff);
+  color: black;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;  
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background: #0056b3;
+}
+
+.scroll-btn.left {
+  left: 10px;   
+}
+
+.scroll-btn.right {
+  right: 10px;  
+}
+
+
+/* Appointment Form */
+/* Appointment Section */
+.appointment-section {
+  background: linear-gradient(90deg, #f3f9ff, #d9e8ff);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-form {
+  background: #f3ebeb;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.appointment-form input,
+.appointment-form select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn-submit:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #0056b3, #004494);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .appointment-form {
+    padding: 25px 20px;
+  }
+
+  .btn-submit {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointment-form {
+    padding: 20px 15px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+/* CONTACT SECTION */
+/* Contact Section */
+.contact-section {
+  /* padding: 60px 20px; */
+  background:  #0e90a4;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Row layout for doctor + form */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Doctor Info */
+.doctor-info {
+  flex: 1 1 280px;
+  text-align: center;
+  background: #f3ebeb;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.doctor-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.doctor-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #2563eb;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #f3ebeb;
+  padding: 20px;              
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 10vh;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37,99,235,0.2);
+  outline: none;
+}
+
+.btn-submit {
+  background: #154165;
+  color: #fff;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  margin-top: 5px;     
+  margin-bottom: -0;    
+  align-self: flex-start; 
+}
+
+.btn-submit:hover {
+  background: #1d4ed8;
+}
+
+.btn-submit:hover {
+  background: #1d4ed8;
+}
+
+
+.map-container {
+  width: 100%;
+  height: 450px;
+          
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doctor-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(90deg, #f3f9ff, #d9e8ff);
+  color: black;
+  padding: 60px 20px 30px;
+  margin-top: -59px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.footer-logo{
+  color: red;
+}
+
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  color: red;
+}
+
+.footer a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: black;
+  padding-left: 5px;
+}
+
+.footer-socials a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: black;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #ffd700;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+
