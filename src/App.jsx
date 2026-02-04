@@ -9,7 +9,7 @@ import Services from "./pages/Services";
 import Appointment from "./pages/Appointment";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-import Footer from "./pages/footer";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
